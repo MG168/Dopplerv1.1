@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ColorUR</string>
+    <string name="title_activity_plus">PlusActivity</string>
+    <string name="title_activity_focus">FocusActivity</string>
+    <string name="title_activity_range">RangeActivity</string>
+    <string name="title_activity_measure">MeasureActivity</string>
+    <string name="title_activity_note">NoteActivity</string>
+    <string name="title_activity_clear">ClearActivity</string>
+    <string name="title_activity_minus">MinusActivity</string>
+    <string name="title_activity_wave">WaveActivity</string>
+    <string name="title_activity_sound">SoundActivity</string>
+    <string name="title_activity_back">BackActivity</string>
+    <string name="title_activity_save_image">SaveImageActivity</string>
+    <string name="title_activity_save_video">SaveVideoActivity</string>
+    <string name="title_activity_mode1">Mode1Activity</string>
+    <string name="title_activity_mode2">Mode2Activity</string>
+    <string name="title_activity_stop">StopActivity</string>
+    <string name="title_activity_line">LineActivity</string>
+    <string name="title_activity_patient">PatientActivity</string>
+    <string name="title_activity_edit">EditActivity</string>
+</resources>

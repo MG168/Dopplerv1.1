@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:defimag="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lltitle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:orientation="horizontal"
+                android:background="#7777ff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/menu"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:gravity="left"
+                       android:layout_marginTop="0dp"
+                        android:layout_marginLeft="6dp"
+                        android:src="@drawable/wifi"
+                        android:background="#7777ff"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:gravity="right"
+                        android:text="V1.0.0 "
+                        android:layout_alignParentRight="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bm"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="2018-12-03"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@android:color/white"
+                    android:text="GN:--"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@android:color/white"
+                    android:text="D:--"
+                    android:textSize="25dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="冻结"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rlmain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:testid="1"
+                    defimag:icon="@drawable/plus"
+                    defimag:texttitle="增益">
+
+                </song.colorur.DefButton.DefImagButton>
+
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_focus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:testid="2"
+                    defimag:icon="@drawable/focus"
+                    defimag:texttitle="聚焦">
+
+                </song.colorur.DefButton.DefImagButton>
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:testid="3"
+                    defimag:icon="@drawable/range"
+                    defimag:texttitle="动态范围">
+                </song.colorur.DefButton.DefImagButton>
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_measure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:testid="4"
+                    defimag:icon="@drawable/measurement"
+                    defimag:texttitle="测量">
+                </song.colorur.DefButton.DefImagButton>
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:testid="5"
+                    defimag:icon="@drawable/note"
+                    defimag:texttitle="注释">
+                </song.colorur.DefButton.DefImagButton>
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:testid="6"
+                    defimag:icon="@drawable/clear"
+                    defimag:texttitle="清除">
+                </song.colorur.DefButton.DefImagButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    defimag:icon="@drawable/minus"
+                    android:layout_weight="1"
+                    defimag:testid="7"
+                    defimag:texttitle="增益">
+
+                </song.colorur.DefButton.DefImagButton>
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_wave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:testid="8"
+                    defimag:icon="@drawable/wave"
+                    defimag:texttitle="谐波">
+
+                </song.colorur.DefButton.DefImagButton>
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:texttitle="降噪"
+                    defimag:testid="9"
+                    defimag:icon="@drawable/sound">
+                </song.colorur.DefButton.DefImagButton>
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:texttitle="回放"
+                    defimag:testid="10"
+                    defimag:icon="@drawable/back">
+                </song.colorur.DefButton.DefImagButton>
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_saveimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:texttitle="保存图像"
+                    defimag:testid="11"
+                    defimag:icon="@drawable/saveimage">
+                </song.colorur.DefButton.DefImagButton>
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_savevideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:texttitle="保存视频"
+                    defimag:testid="12"
+                    defimag:icon="@drawable/savevideo">
+                </song.colorur.DefButton.DefImagButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_mode1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:testid="13"
+                    defimag:icon="@drawable/a"
+                    defimag:texttitle="模式">
+
+                </song.colorur.DefButton.DefImagButton>
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_mode2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:testid="14"
+                    defimag:icon="@drawable/b"
+                    defimag:texttitle="模式">
+
+                </song.colorur.DefButton.DefImagButton>
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:testid="15"
+                    defimag:icon="@drawable/snowflake"
+                    defimag:texttitle="冻结">
+
+                </song.colorur.DefButton.DefImagButton>
+
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:testid="16"
+                    defimag:icon="@drawable/line"
+                    defimag:texttitle="穿刺线">
+
+                </song.colorur.DefButton.DefImagButton>
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_patient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:testid="17"
+                    defimag:icon="@drawable/patient"
+                    defimag:texttitle="病例">
+
+                </song.colorur.DefButton.DefImagButton>
+
+                <song.colorur.DefButton.DefImagButton
+                    android:id="@+id/defimgbtn_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    defimag:testid="18"
+                    defimag:icon="@drawable/edit"
+                    defimag:texttitle="设置">
+                </song.colorur.DefButton.DefImagButton>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
+
